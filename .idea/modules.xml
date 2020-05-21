@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/workorderms/.mvn/.mvn.iml" filepath="$PROJECT_DIR$/workorderms/.mvn/.mvn.iml" />
-      <module fileurl="file://$PROJECT_DIR$/workorderms/src/main/main.iml" filepath="$PROJECT_DIR$/workorderms/src/main/main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/workorderms/src/test/test.iml" filepath="$PROJECT_DIR$/workorderms/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/jikeJavaL2.iml" filepath="$PROJECT_DIR$/.idea/jikeJavaL2.iml" />
     </modules>
   </component>
 </project>

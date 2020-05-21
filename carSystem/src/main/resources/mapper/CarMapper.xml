@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jkxy.car.api.dao.CarDao">
+
+    <select id="fuzzyQueryPage" resultType="com.jkxy.car.api.pojo.Car">
+        SELECT * FROM carMessage
+        <where>
+
+            <if test="carName != null and carName != ''">
+                AND carName LIKE CONCAT(CONCAT('%',#{carName},'%'))
+            </if>
+
+        </where>
+
+        <if test="fromItem == null and size != null">
+             LIMIT #{size};
+        </if>
+
+        <if test="fromItem != null and size != null">
+             LIMIT #{fromItem}, #{size};
+        </if>
+
+
+    </select>
+
+</mapper>
